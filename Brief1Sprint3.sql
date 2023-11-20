@@ -301,3 +301,8 @@ INSERT INTO sponsorisations (id_sponsor, id_event) VALUES
 (8, 8),
 (9, 9),
 (10, 10);
+--creer des user 
+CREATE USER 'nouri'@'localhost' IDENTIFIED BY 'nouri34','appie'@'localhost' IDENTIFIED BY 'appie34';
+--creer de privilleges
+GRANT SELECT, INSERT ON connectEvents.sponsorisations TO 'nouri'@'localhost';
+GRANT ALL ON connectEvents.* TO'appie'@'localhost' ;
